@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^contact.html$ contact.php [L]
+RewriteRule ^search.html$ search.php [L]
+
+RewriteRule ^blogs.html$ post.php?type=blogs [L]
+RewriteRule ^news.html$ post.php?type=news [L]
+RewriteRule ^events.html$ post.php?type=events [L]
+RewriteRule ^announcements.html$ post.php?type=announcements [L]
+
+RewriteRule ^archives.html$ membersArea.php?type=archives [L]
+RewriteRule ^grievances.html$ membersArea.php?type=grievances [L]
+RewriteRule ^legislativematters.html$ membersArea.php?type=legislativematters [L]
+RewriteRule ^hottopics.html$ membersArea.php?type=hottopics [L]
+
+RewriteRule ^page_(.+)\.html$ page.php?href=$1 [L]
+RewriteRule ^(.+)\.html$ post.php?href=$1 [L]

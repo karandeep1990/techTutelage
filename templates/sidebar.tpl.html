@@ -1,0 +1,35 @@
+<div class="right-block">
+			
+        	<div class="search">
+        	<form name="search" id="search" method="get" action="search.php">
+		    	<input name="keyword" id="keyword" type="text" class="searchinput" value="Search site..." onClick="checkSearch('1');" onBlur="checkSearch('2');"  />
+		    	<input type="submit" name="Submit" id="Submit" value="search" />
+		    </form>		    
+			</div><!--END search-->
+
+            {NEWSEVENTS}
+            
+			{BLOGS}
+			
+            <div class="socialbookmarks"><a href="#"><img src="images/facebook.jpg" alt="Facebook" width="24" height="24" border="0" /></a><a href="#"><img src="images/twitter.jpg" alt="twitter" width="25" height="24" border="0" /></a><a href="#"><img src="images/in.jpg" alt="LinkedIn" width="24" height="24" border="0" /></a><a href="#"><img src="images/da.jpg" alt="blogger\" width="24" height="24" border="0" /></a><a href="#"><img src="images/bing.jpg" alt="Blogger" width="24" height="24" border="0" /></a></div>
+      </div><!--END right-block-->
+      
+<script>
+	function checkSearch(opr)
+	{
+		if(opr == '1')
+		{
+			if(document.getElementById('keyword').value == 'Search site...')
+			{
+				document.getElementById('keyword').value = '';
+			}
+		}
+		else if(opr == '2')
+		{
+			if(document.getElementById('keyword').value == '')
+			{
+				document.getElementById('keyword').value = 'Search site...';
+			}
+		}
+	}
+</script>

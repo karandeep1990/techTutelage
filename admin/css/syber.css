@@ -1,0 +1,203 @@
+html, body{margin:0px; padding:0px; height:100%;}
+body{margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000; background:url(../images/bg.png) repeat-x center top;}
+
+h1, h2, h3, h4, h5, h6, h7, p, form, input, ul, li{padding:0px; margin:0px; font-weight:normal;}
+p{line-height:16px}
+ul,ol,li {list-style:none;}
+input, select, textarea{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000;}
+a{text-decoration:none; outline:none;padding:0px;}
+a:hover{text-decoration:underline; outline:none;}
+
+a img{border:0px; outline:none;}
+.clear{clear:both; font-size:0px; height:0px; line-height:0px;}
+.fleft{float:left;}
+.fright{float:right;}
+
+* html img, 
+* html .png{
+    azimuth: expression(
+        this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+        this.src = "images/x.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+        this.runtimeStyle.backgroundImage = "none")),this.pngSet=true
+    );
+}
+
+/*======================== Master Styles =================*/
+.master{width:915px;margin:0px auto;background:url(../images/header_bg.png) no-repeat left top;}
+
+/*======================== Header Styles =================*/
+.header{margin:0px auto;width:915px;padding-bottom:35px;}
+.logo{float:left;padding:10px 0px 0px 10px;}
+
+.navigation{float:right; width:220px; padding:45px 0px 0px 0px;}
+.navigation ul{list-style:none;padding:0px;margin:0px;}
+.navigation li{float:left;display:block;margin:0px;padding:0px 10px 0px 0px;}
+.navigation a{text-decoration:none;padding:0px 1px 0px 4px;color:#fff;font-size:12px;background:url(../images/But_l.png) left top no-repeat; text-align:center; text-transform:uppercase;}
+.navigation a span{padding:7px 15px 6px 10px;float:right;background:url(../images/But_r.png) right top no-repeat;}
+
+.navigation a, .navigation a span{display:block;float:left;}
+
+.navigation .selected a, .navigation .selected a span{display:block;}
+.navigation a, .navigation a span{float:none;}
+
+.navigation a:hover{text-decoration:none;padding:0px 1px 0px 4px;color:#fff;font-size:12px;background:url(../images/But_l.png) left top no-repeat;}
+.navigation a:hover span{padding:7px 15px 6px 10px;background:url(../images/But_r.png) right top no-repeat;}
+
+/*======================== Content Styles =================*/
+.con{width:915px;padding:0px 0px 80px 0px;}
+.con h1{font:20px Arial, Helvetica, sans-serif;color:#737373;padding:20px 0px 15px 0px;text-align:center;font-weight:bold;text-transform:uppercase;}
+.con_input{width:628px;border-bottom:1px solid #e5e5e5;margin:0px auto;background: #f5f5f5 url(../images/b_t_i.png) repeat-x left top;}
+.inp{margin:0px auto;width:362px;padding:10px 0px 12px 0px;border-bottom:1px solid #d9d9d9;}
+.inp label{font:13px Arial, Helvetica, sans-serif;color:#828282;float:left;padding:25px 0px 11px 2px;font-weight:bold;text-transform:capitalize;}
+.inp input {width:355px;padding:8px 5px 7px 5px;border:1px solid #c4c4c4;-moz-border-radius:3px; webkit-border-radius:3px; khtml-border-radius:3px; border-radius:3px;}
+
+.login{margin:0px auto;}
+.login_l{float:left;width:85px;}
+.login img{float:left;margin-top:15px;width:84px;cursor:pointer;}
+.login_r{float:right;margin-top:10px;width:85px;}
+.login_r input{float:left;width:15px;margin-top:17px; border:0px; height:16px;}
+.login label{float:right;font:11px Arial, Helvetica, sans-serif;color:#828282; padding-top:17px;}
+
+.text{width:362px; margin:0px auto;}
+.text p{font:11px Arial, Helvetica, sans-serif;color:#949595;padding:15px 0px 21px 0px;}
+.text p a{color:#5798c6;text-decoration:underline;}
+.text p a:hover{text-decoration:none;}
+.text_2{background:#fff9d8;width:628px;margin:0px auto;}
+.text_2 img{float:left;margin:17px 0px 0px 19px;}
+.text_2 p{font:12px Arial, Helvetica, sans-serif;color:#515151;padding:13px 0px 20px 41px;}
+.text_2 p a{color:#ae3126;text-decoration:underline; font-weight:bold;}
+.text_2 p a:hover{text-decoration:none;}
+
+/*======================== Footer Styles =================*/
+.footer_m{background:url(../images/f_bg.png) repeat-x left top;width:100%;height:49px;}
+.footer{width:915px;margin:0px auto;}
+
+.footer_l{float:left; width:500px;}
+
+.footer_l li{float:left;font:12px Arial, Helvetica, sans-serif; color:#919191;padding:20px 9px 0px 0px;}
+.footer_l li span{color:#919191;}
+.footer_l li a{color:#919191;}
+
+.footer_r{float:right}
+.footer_r p{font:12px Arial, Helvetica, sans-serif;color:#919191;padding:20px 0px 0px 2px;}
+.footer_r p a{color:#e7b41a;text-decoration:none;}
+.footer_r p a:hover{text-decoration:underline;}
+
+/*======================== Inner Page Styles =================*/
+.top_nav{background:url(../images/top_nav.gif) repeat-x left top; width:100%; height:46px;}
+.m_top_nav{width:907px; margin:0px auto;padding:12px 0px 0px 0px;}
+.m_top_nav_l{float:left; width:400px; }
+.m_top_nav_l h1{color:#434343px; float:left; font-size:16px; font-weight:bold;  font-family:Arial, Helvetica, sans-serif;padding:2px 0px 0px 23px;}
+.m_top_nav_l h1 span{color:#fec312;}
+.m_top_nav_r{float:right;width:auto;margin-top:5px;}
+.m_top_nav_r ul{margin:0px auto; padding-right:24px;}
+.m_top_nav_r li{float:left; padding-left:6px;}
+.m_top_nav_r li a{color:#7e7e7e;}
+.m_top_nav_r li a.help{color:#8f0000; background:url(../images/sign_ut.png) no-repeat left top;padding-left:20px; font-weight:bold; margin:0px; float:left;}
+.m_top_nav_r li span{float:left; color:#7e7e7e;}
+
+.container{margin:0px auto; padding:24px 40px 20px 30px; width:875px;}
+.container_l{float:left; width:220px; background-color:#f5f5f5;margin-bottom:35px;-moz-border-radius:5px; webkit-border-radius:5px; khtml-border-radius:5px; border-radius:5px;}
+.heading{margin:0px auto;}
+.heading_l{background:url(../images/heading_l.png) no-repeat left top; width:4px; height:33px; float:left;}
+.heading_c{background:url(../images/heading_c.png) repeat-x left top; width:212px; height:33px;float:left;}
+.heading_c h2{font-size:14px; color:#666; padding:9px 0px 0px 9px; font-weight:bold;}
+.heading_r{background:url(../images/heading_r.png) no-repeat left top; width:4px; height:33px; float:left;}
+.detail_1{margin:11px auto;-moz-border-radius:5px; webkit-border-radius:5px; khtml-border-radius:5px; border-radius:5px; background-color:#fff; width:200px;}
+.detail_1 ul{margin:0px auto;}
+.detail_1 li{float:left; padding:10px 0px 2px 14px; width:188px; border-bottom:1px solid #f2f2f2;}
+.detail_1 li.last{ border-bottom:none;}
+.detail_1 li.l_last{ border-bottom:none;padding-bottom:10px;}
+.detail_1 li img{float:left; padding-bottom:7px;}
+.detail_1 li a{background:url(../images/rrow.png) no-repeat 146px 5px; width:7px; padding:0px 0px 5px 9px; width:150px; float:left; color:#656565; }
+.detail_1 li a:hover{background:url(../images/round_arrow.png) no-repeat right top; width:7px; padding:0px 0px 5px 9px; width:150px;color:#aa4141;font-weight:bold; }
+
+.deleteText a{color:#656565; text-decoration:none; padding-left:20px; }
+.deleteText a:hover{color:#aa4141; text-decoration:underline; }
+
+.container_r{float:right; width:626px; padding:0px 0px 10px 0px; background:#f5f5f5;-moz-border-radius:5px; webkit-border-radius:5px; khtml-border-radius:5px; border-radius:5px;}
+.heading_R{margin:0px auto;}
+.heading_r_l{background:url(../images/heading_l.png) no-repeat left top; width:4px; height:33px; float:left;}
+.heading_r_c{background:url(../images/heading_c.png) repeat-x left top; width:618px; height:33px;float:left;}
+.heading_r_c h2{font-size:14px; color:#666; padding:9px 0px 0px 9px; font-weight:bold;}
+.heading_r_r{background:url(../images/heading_r.png) no-repeat left top; width:4px; height:33px; float:left;}
+
+.welcome{margin:100px 0px 120px 27px;background:url(../images/bg_2.png) repeat-x  left top;height:133px;width:571px;}
+.welcome h1{font:14px Arial, Helvetica, sans-serif;color:#737373; text-align:center;font-weight:bold;padding-top:33px;}
+.welcome h2{font:50px Arial, Helvetica, sans-serif;color:#d8d8d8; text-align:center;}
+.image{background:url(../images/b_t.jpg) repeat-x left top;float:left; height:2px;}
+
+/*==========================================General Settings Styles ==============================*/
+.General{margin:0px auto;width:528px;}
+.General_2{margin:0px auto; width:528px; margin:5px 0px 0px 23px;}
+.General_l{float:left;width:155px;margin-top:15px;padding-right:5px;}
+.General_l label{font:13px Arial, Helvetica, sans-serif;color:#828282;float:right;padding:11px 8px 0px 29px;text-transform:capitalize;background:url(../images/star.png) no-repeat right center;}
+.General_l img{float:right;padding:5px 0px 0px 0px ;}
+
+.General_r{float:right;width:365px;margin-top:15px;}
+.General_r input{width:355px;padding:8px 5px 7px 5px;border:1px solid #c4c4c4;-moz-border-radius:3px; webkit-border-radius:3px; khtml-border-radius:3px; border-radius:3px;margin:5px 0px 0px 0px ;font:12px Arial, Helvetica, sans-serif;color:#828282;}
+.General_r textarea {width:355px;padding:8px 5px 7px 5px;border:1px solid #c4c4c4;-moz-border-radius:3px; webkit-border-radius:3px; khtml-border-radius:3px; border-radius:3px;margin:5px 0px 0px 0px ;font:12px Arial, Helvetica, sans-serif;color:#828282;height:92px;}
+
+.butt{float:right;width:365px; padding:10px 0px 0px 0px;}
+.but_a{padding:10px 0px 0px 7px;}
+
+/*==========================================Top Banners Styles ==============================*/
+.heading_r_c h2.TB_text{font-size:14px; color:#666; padding:9px 0px 0px 9px; font-weight:bold; width:300px; float:left;}
+.heading_order{width:303px; float:right; padding:5px 0 0 0;}
+.heading_order label{font:bold 12px Arial, Helvetica, sans-serif; color:#878787; padding:4px 5px 0 0; float:left;}
+.heading_order select{font:bold 12px Arial, Helvetica, sans-serif; color:#878787; background:url(../images/select_bg.png) no-repeat left top; width:117px; border:0px; float:left; padding:4px 0 5px ;}
+.heading_order a{font:bold 12px Arial, Helvetica, sans-serif; color:#878787; background:url(../images/desending_bg.png) no-repeat 100% 3px; padding:4px 22px 0 20px; float:left;}
+
+.TB_search{width:616px; background-color:#f7f7f7; border-bottom:1px solid #dfdfdf; float:left; padding:11px 0 10px 10px; position:relative; z-index:100;}
+
+.HT_search{float:left; width:95px; padding:0px 0px 0px 0px; margin:-2px 0 0 0;}
+.HT_search a{text-decoration:none; padding:0px 1px 0px 17px; color:#4a1200; font-size:12px; font-weight:normal; background:url(../images/search_L.png) left top no-repeat; text-align:center; cursor:pointer;}
+.HT_search a span{padding:10px 20px 13px 0px; float:left; background:url(../images/search_R.png) right 0px no-repeat; width:65px; color:#7d9216; text-transform:uppercase;}
+.HT_search a, .HT_search a span{display:block; float:left;}
+
+/* Commented backslash hack hides rule from IE5-Mac \*/
+.HT_search a, .HT_search a span{float:none;}/* End IE5-Mac hack */
+
+.HT_search a:hover{text-decoration:none; padding:0px 1px 0px 17px; color:#4a1200; font-size:12px; font-weight:normal; background:url(../images/search_L.png) left top no-repeat;}
+.HT_search a:hover span{padding:10px 20px 13px 0px; background:url(../images/search_R.png) right 0px no-repeat;}
+
+.add_banner{float:left; width:115px; padding:0px 0px 0px 15px; margin:-2px 0 0 0;}
+.add_banner a{text-decoration:none; float:left; padding:0px 1px 0px 17px; color:#4a1200; font-size:12px; font-weight:normal; background:url(../images/search_L.png) left top no-repeat; text-align:center; cursor:pointer;}
+.add_banner a span{padding:10px 20px 13px 0px; float:left; background:url(../images/search_R.png) right 0px no-repeat; width:100%; color:#7d9216; text-transform:uppercase;}
+
+.banner_actions{width:606px; background-color:#f5f5f5; border-top:1px solid #fff; float:left; padding:11px 10px 10px 10px;}
+.BA_heading{width:606px; background: #ffffff url(../images/b_t_i.png) repeat-x left top;}
+.BA_heading h2{float:left; font:bold 12px Arial, Helvetica, sans-serif; color:#8f0000; padding:13px 0 0px 15px;}
+.BA_heading h3{float:right; font:bold 12px Arial, Helvetica, sans-serif; color:#8f0000; padding:13px 25px 13px 0;}
+
+.banner_box{width:566px; float:left; border-bottom:1px solid #f5f5f5; padding:12px 25px 12px 15px;}
+.banner_box h4{float:left; font:normal 12px Arial, Helvetica, sans-serif; color:#555555;}
+.banner_box img{float:right; margin:0 0px 0 10px;}
+
+.pagination{width:606px; margin:8px 0 0 0; border:1px solid #ededed; padding:5px 0px; background-color:#fff;}
+.pagination ul{margin:0px auto; width:500px;}
+.pagination li{margin:0px; float:left;}
+.pagination li a{margin:0px 0 0 5px; float:left; font:normal 14px Arial, Helvetica, sans-serif; color:#4f4f4f; text-decoration:none; background:url(../images/PG_bg.png) repeat-x left top; border:1px solid #d3d3d3; padding:2px 7px;}
+.pagination li.Prev_next a{margin:0px 0 0 5px; float:left; color:#005395; background:none; border:0px; padding:4px 15px 2px 15px;}
+.pagination li.Prev_next a:hover{background:none; border:0px; text-decoration:underline; color:#aa4141;}
+
+.pagination li a:hover,.pagination li.PG_sel a{background:url(../images/PG_bg_hover.png) repeat-x left top; border:1px solid #c36a6a; color:#fff;}
+
+/*========================================== Top Banner Edit Styles ==============================*/
+.banner_2{margin:0px auto; width:528px; margin:20px 0px 10px 23px;}
+
+.banner_l{float:left;width:155px;margin-top:10px;padding-right:5px;}
+.banner_l label{font:13px Arial, Helvetica, sans-serif;color:#828282;float:right;padding:11px 0px 0px 29px;text-transform:capitalize;}
+.banner_r p{ font:11px Arial, Helvetica, sans-serif;padding-top:5px;}
+
+.banner_r{float:right;width:365px;margin-top:10px;}
+.banner_r input{width:355px;padding:8px 5px 7px 5px;border:1px solid #c4c4c4;-moz-border-radius:3px; webkit-border-radius:3px; khtml-border-radius:3px; border-radius:3px;margin:5px 0px 0px 0px ;font:12px Arial, Helvetica, sans-serif;color:#828282;}
+.r_m{float:left;margin:5px 0px 0px ;}
+.img{float:left;margin-top:5px;}
+.i_b{float:right;width:270px;margin-left:5px}
+.i_b input{width:160px;padding:2px 5px 7px 5px;border:1px solid #c4c4c4;-moz-border-radius:3px; webkit-border-radius:3px; khtml-border-radius:3px; border-radius:3px;margin:5px 0px 0px 0px ;font:12px Arial, Helvetica, sans-serif;color:#828282;float:left;}
+.i_b input.i_but{margin:7px 0px 0px 5px;  width:77px; background:url(../images/btn.png) no-repeat left top; border:none;float:left;text-align:center;color:#323232;padding:2px 0px 9px 0px ;font-weight:bold;s}
+
+.error{text-align:center; font-style:italic; font-size:12px; color:#666666;}

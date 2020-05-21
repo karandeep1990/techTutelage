@@ -1,0 +1,1 @@
+[15-Mar-2011 03:17:36] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'mail/class.phpmailer.php' (include_path='.:/usr/local/php52/pear') in /home/checkpet/public_html/nteu/admin/forgot_password.php on line 4

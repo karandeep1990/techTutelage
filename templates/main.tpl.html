@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> {METATITLE} </title>
+    {METAKEYWORDS}
+    {METADESCRIPTION}
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="slider/nivo-slider.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="scripts/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="scripts/nav_script.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#slider').nivoSlider({
+          effect:'random', //Specify sets like: 'fold,fade,sliceDown'
+          slices:15,
+          animSpeed:500, //Slide transition speed
+          pauseTime:3000,
+          startSlide:0, //Set starting Slide (0 index)
+          directionNav:false, //Next &amp; Prev
+          directionNavHide:true, //Only show on hover
+          controlNav:false, //1,2,3...
+          controlNavThumbs:false, //Use thumbnails for Control Nav
+          controlNavThumbsFromRel:false, //Use image rel for thumbs
+          controlNavThumbsSearch: '.jpg', //Replace this with...
+          controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+          keyboardNav:true, //Use left &amp; right arrows
+          pauseOnHover:false, //Stop animation while hovering
+          manualAdvance:false, //Force manual transitions
+          captionOpacity:0.8, //Universal caption opacity
+          beforeChange: function(){},
+          afterChange: function(){},
+          slideshowEnd: function(){}, //Triggers after all slides have been shown
+          lastSlide: function(){}, //Triggers when last slide is shown
+          afterLoad: function(){} //Triggers when slider has loaded
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+      {HEADER}
+
+      <div class="main-container-back clearfix">
+        <div class="main-container">
+          {CONTENT}
+          {SIDEBAR}
+        </div><!--END main-container-->
+      </div><!--END main-container-back-->
+    </div><!--END wrapper-->
+    {FOOTER}
